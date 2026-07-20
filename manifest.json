@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Incognito Share",
+  "version": "1.0.4",
+  "description": "Shares all private tab URLs at once via the Android sharesheet. Don't forget to allow Run in private browsing and if you have a lot of tabs or haven't opened them recently, look at the tab again to be able to share them (see Bug 1583281).",
+  "permissions": [
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Android Share All Private Tabs"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "incognito-share@tecgames.info",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  }
+}
